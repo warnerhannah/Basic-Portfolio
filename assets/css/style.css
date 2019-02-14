@@ -72,7 +72,7 @@ h1 {
     font-family: 'Georgia', Times, "Times New Roman", serif;
     text-align: center;
     height: 60px;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 nav {
@@ -105,6 +105,7 @@ img.profilepicture {
 img {
     height: 200px;
     width: 250px;
+    position: relative;
 }
 
 h3 {
@@ -112,20 +113,27 @@ h3 {
     color: white;
     opacity: .75;
     width: 250px;
-    padding-top: 25px;
+    padding-top: 15px;
     padding-bottom: 15px;
-    height: 40px;
+    height: 20px;
     text-align: center;
+    position: relative;
+    bottom: 80px;
 }
 
 .examples {
     display: flex;
+    flex-direction: column;
+    width: 300px;
 }
 
 .container-examples {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: start;
     width: 960px;
+    margin: 20px;
+    flex-wrap: wrap;
+
 }
 
 
@@ -133,6 +141,26 @@ h3 {
 form {
     margin: 20px;
     padding-bottom: 20px;
+}
+
+input[type=text] {
+    width: 900px;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    height: 40px;
+    color: white;
+    width: 130px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[name=message] {
+    height: 200px;
 }
 
 /* Footer */
